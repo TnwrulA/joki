@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miftahul Jannah G20123056</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Warung Makan Chiclicious</h1>
+        <p>Menu Makanan & Minuman Elegan</p>
+        <button id="themeToggle" class="theme-toggle">🌙</button>
+    </header>
+    <main>
+        <section class="menu-section">
+            <h2>Menu Makanan</h2>
+            <div class="menu-container">
+                <div class="menu-item" onclick="addToOrder('Nasi Putih', 5000)">
+                    <img src="image/NASI PUTIH.jpg" alt="Nasi Putih">
+                    <h3>Nasi Putih</h3>
+                    <p>Rp 5.000</p>
+                    <p class="menu-description">Memiliki tekstur yang ringan serta rasa netral.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Nasi Kuning', 5000)">
+                    <img src="image/Nasi Kuning.jpg" alt="Nasi Kuning">
+                    <h3>Nasi Kuning</h3>
+                    <p>Rp 5.000</p>
+                    <p class="menu-description">Nasi dimasak dengan kunyit, menghasilkan warna kuning cerah.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Ayam Bakar', 25000)">
+                    <img src="image/Ayam Bakar.jpg" alt="Ayam Bakar">
+                    <h3>Ayam Bakar</h3>
+                    <p>Rp 25.000</p>
+                    <p class="menu-description">Ayam dibumbui dengan rempah, dibakar hingga matang.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Ayam Goreng', 15000)">
+                    <img src="image/Ayam Goreng.jpg" alt="Ayam Goreng">
+                    <h3>Ayam Goreng</h3>
+                    <p>Rp 15.000</p>
+                    <p class="menu-description">Ayam digoreng hingga renyah dan kecoklatan.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Ayam Krispy', 20000)">
+                    <img src="image/Ayam Crispy.jpg" alt="Ayam Krispy">
+                    <h3>Ayam Krispy</h3>
+                    <p>Rp 20.000</p>
+                    <p class="menu-description">Ayam digoreng dengan lapisan tepung renyah dan juicy di dalamnya.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Ayam Saus Tiram', 30000)">
+                    <img src="image/Ayam saus Tiram.jpg" alt="Ayam Saus Tiram">
+                    <h3>Ayam Saus Tiram</h3>
+                    <p>Rp 30.000</p>
+                    <p class="menu-description">Ayam dimasak dengan saus tiram dan bumbu lainnya.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Ayam Rica-Rica', 23000)">
+                    <img src="image/Ayam rica Rica.jpg" alt="Ayam Rica-Rica">
+                    <h3>Ayam Rica-Rica</h3>
+                    <p>Rp 23.000</p>
+                    <p class="menu-description">Ayam dimasak dengan bumbu rica-rica yang pedas.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Ayam Kecap', 27000)">
+                    <img src="image/Ayam kecap.jpg" alt="Ayam Kecap">
+                    <h3>Ayam Kecap</h3>
+                    <p>Rp 27.000</p>
+                    <p class="menu-description">Ayam dimasak dengan kecap manis dan bumbu lainnya.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Tahu Tempe', 7000)">
+                    <img src="image/tahu tempe.jpg" alt="Tahu Tempe">
+                    <h3>Tahu Tempe</h3>
+                    <p>Rp 7.000</p>
+                    <p class="menu-description">Tahu dan tempe goreng, sering disajikan sebagai lauk pendamping.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Cah Kangkung', 7000)">
+                    <img src="image/kangkung.jpg" alt="Cah Kangkung">
+                    <h3>Cah Kangkung</h3>
+                    <p>Rp 7.000</p>
+                    <p class="menu-description">Kangkung dimasak dengan bumbu-bumbu sederhana.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Ayam Penyet', 20000)">
+                    <img src="image/ayam penyet.jpg" alt="Ayam Penyet">
+                    <h3>Ayam Penyet</h3>
+                    <p>Rp 20.000</p>
+                    <p class="menu-description">Ayam goreng yang dipenyet dengan sambal.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Ayam Taliwang', 28000)">
+                    <img src="image/ayam taliwang.jpg" alt="Ayam Taliwang">
+                    <h3>Ayam Taliwang</h3>
+                    <p>Rp 28.000</p>
+                    <p class="menu-description">Ayam bakar khas Lombok dengan sambal pedas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2>Menu Minuman</h2>
+            <div class="menu-container">
+                <div class="menu-item" onclick="addToOrder('Air Mineral', 5000)">
+                    <img src="image/le minarale.jpg" alt="Air Mineral">
+                    <h3>Air Mineral</h3>
+                    <p>Rp 5.000</p>
+                    <p class="menu-description">Air yang kaya akan mineral alami.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Es Teh', 5000)">
+                    <img src="image/teh.jpg" alt="Es Teh">
+                    <h3>Es Teh</h3>
+                    <p>Rp 5.000</p>
+                    <p class="menu-description">Teh yang diseduh dan didinginkan dengan es batu.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Es Jeruk', 5000)">
+                    <img src="image/es jeruk.jpg" alt="Es Jeruk">
+                    <h3>Es Jeruk</h3>
+                    <p>Rp 5.000</p>
+                    <p class="menu-description">Perasan air jeruk yang dicampur dengan es batu.</p>
+                </div>
+                <div class="menu-item" onclick="addToOrder('Es Campur', 7000)">
+                    <img src="image/Es Campur.jpg" alt="Es Campur">
+                    <h3>Es Campur</h3>
+                    <p>Rp 7.000</p>
+                    <p class="menu-description">Campuran buah, sirup manis, susu, dan es serut.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-section">
+            <h2>Order Anda</h2>
+            <ul id="orderList"></ul>
+            <p id="totalPrice">Total: Rp 0</p>
+            <input type="number" id="payment" placeholder="Masukkan jumlah uang" />
+            <button onclick="checkout()">Checkout</button>
+            <p id="thankYouMessage"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Miftahul Jannah G20123056.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
